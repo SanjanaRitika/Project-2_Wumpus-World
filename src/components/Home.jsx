@@ -268,16 +268,19 @@ const Grid = () => {
             ))}
           </div>
         </div>
-        <div className="wumpus-board">
-          {wumpusProb.map((col, colIndex) => (
-            <div key={colIndex} className="row">
-              {col.map((cell, rowIndex) => (
-                <div key={rowIndex} className="cheat-box">
-                  <CheatCell id={cell} x={rowIndex} y={colIndex} />
-                </div>
-              ))}
-            </div>
-          ))}
+        <div style={{ flexDirection: "column" }}>
+          <div>Wumpus Probability</div>
+          <div className="wumpus-board">
+            {wumpusProb.map((col, colIndex) => (
+              <div key={colIndex} className="row">
+                {col.map((cell, rowIndex) => (
+                  <div key={rowIndex} className="cheat-box">
+                    <CheatCell id={cell} x={rowIndex} y={colIndex} />
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       <div
@@ -379,7 +382,8 @@ const Grid = () => {
             {finalMessage}
           </h2>
         </div>
-        <div>
+        <div style={{ flexDirection: "column" }}>
+          <div>Pit Probability</div>
           <div className="pit-board">
             {pitProb.map((col, colIndex) => (
               <div key={colIndex} className="row">
