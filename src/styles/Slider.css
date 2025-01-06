@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap");
+body {
+  font-family: "Rubik Vinyl", Helvetica, Arial, sans-serif;
+  background: #9ac5d0;
+  color: #34495e;
+}
+
+.value {
+  /* border-bottom: 4px dashed #bdc3c7; */
+  /* margin-bottom: 1rem; */
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 10rem;
+  height: 1rem;
+  line-height: 60px;
+  margin-bottom: 0.1rem;
+  letter-spacing: -0.07em;
+  text-shadow: white 2px 2px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="range"] {
+  display: block;
+  -webkit-appearance: none;
+  background-color: #1f3a4c;
+  width: 10rem;
+  height: 0.5rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: beige;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid rgb(219, 217, 215);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+​ input[type="range"]::-webkit-slider-thumb:hover {
+  background-color: white;
+  border: 2px solid #e74c3c;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  transform: scale(1.6);
+}
